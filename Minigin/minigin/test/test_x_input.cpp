@@ -1,4 +1,5 @@
 ﻿// Standard includes
+#include <chrono>
 #include <iostream>
 #include <thread>
 
