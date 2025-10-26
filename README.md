@@ -1,53 +1,63 @@
-# Minigin
+# 🟠 Programming 4 – Q*bert (2024)
 
-Minigin is a very small project using [SDL2](https://www.libsdl.org/) and [glm](https://github.com/g-truc/glm) for 2D c++ game projects. It is in no way a game engine, only a barebone start project where everything sdl related has been set up. It contains glm for vector math, to aleviate the need to write custom vector and matrix classes.
+Hey fellow DAE student, game dev enthusiast, or curious visitor 👋  
+Welcome to my **Programming 4 – Q*bert** repository — the final project for [Programming 4](https://github.com/knapeczadam/programming-4).
 
-[![Build Status](https://github.com/avadae/minigin/actions/workflows/msbuild.yml/badge.svg)](https://github.com/avadae/msbuild/actions)
-[![GitHub Release](https://img.shields.io/github/v/release/avadae/minigin?logo=github&sort=semver)](https://github.com/avadae/minigin/releases/latest)
+---
 
-# Goal
+## 🗂️ About this repository
 
-Minigin can/may be used as a start project for the exam assignment in the course 'Programming 4' at DAE. In that assignment students need to recreate a popular 80's arcade game with a game engine they need to program themselves. During the course we discuss several game programming patterns, using the book '[Game Programming Patterns](https://gameprogrammingpatterns.com/)' by Robert Nystrom as reading material. 
+This repo contains my **final project** for Programming 4, where I was randomly assigned **Q*bert** out of ten possible games.  
+The main goal was to implement the **first three levels** with **pixel-perfect accuracy**, replicating enemy AI and behavior as closely as possible.  
 
-# Disclaimer
+> ⚠️ Note: this project applies patterns and concepts learned in Programming 4.  
+> It’s a **snapshot of my learning journey**, not a polished commercial product.
 
-Minigin is, despite perhaps the suggestion in its name, not a game engine. It is just a very simple sdl2 ready project with some of the scaffolding in place to get started. None of the patterns discussed in the course are used yet (except singleton which use we challenge during the course). It is up to the students to implement their own vision for their engine, apply patterns as they see fit, create their game as efficient as possible.
+---
 
-# Use
+## 🏗️ Engine: Minigin
 
-Get the source from this project, or since students need to have their work on github too, they can use this repository as a template.
+The project is built on **[Minigin](https://github.com/avadae/minigin)**, a minimal SDL2 & glm setup created by **Alex Vanden Abeele**.  
+Minigin is not a full game engine — it provides a small framework for 2D C++ games with:
 
-## Windows version
+- SDL2 setup for rendering/input  
+- glm for vector and matrix math  
+- Scaffolding to quickly start a project  
 
-- Install CMake 
-- Install CMake and CMake Tools extensions in Visual Code
-- Open the root folder in Visual Code, a "build" folder will be made by Code and the project can now be build.
+In this project, I extended Minigin to implement a **component-based GameObject system**, **event queue**, **dedicated audio thread**, and all other game patterns required for Q*bert.
 
-## Emscripten version
+---
 
-- Install CMake 
-- Install Emscripten
-- Install Ninja
-- Install python
+## 🧩 Key Patterns and Concepts
 
-In a terminal, navigate to the root folder. Run this: 
+- **Programming Patterns Implemented:** Singleton, Factory, Observer, Service Locator, Command, Pimpl  
+- **Event system:** Queue-based event handling  
+- **Object management:** Unity-inspired GameObject system with component-based architecture  
+- **Audio:** Runs on a dedicated thread  
+- **Execution order:** Unity-inspired essential functions  
 
-    mkdir build_web
-    cd build_web
-    emcmake cmake ..
-    emmake ninja
+---
 
-To be able to see the webpage you can simply start a python webserver in the build_web folder
+## 🚀 Releases
 
-    python -m http.server
+This project contains **two release builds**, available in the [📦 Releases](../../releases) section:
 
-Then simply browse to http://localhost:8000 and you're good to go.
+- `programming_4-qbert-1.0.0-windows-x64.zip` → normal game build  
+- `programming_4-qbert-debug-1.0.0-windows-x64.zip` → debug build with **999 lives** (effectively infinite) and **sprite/logical debug visualization**
 
-## Chocolatey
+---
 
-For installing all of the above I recommend using [Chocolatey](https://chocolatey.org/). You can then simply run the following to install what is needed:
+## 🧠 Final Thoughts
 
-    choco install -y cmake
-    choco install -y emscripten
-    choco install -y ninja
-    choco install -y python
+This project demonstrates how **game programming patterns** improve code structure, memory access, and decoupling.  
+It also showcases how best practices like **event-driven systems, threading, and modular architecture** can be applied in game development.  
+If you’re exploring Programming 4 projects: **study, experiment, and enjoy a classic arcade revival** 🟠🕹️
+
+---
+
+### 🪪 License
+This repository is licensed under the **MIT License** — feel free to explore, learn, or fork for educational purposes.
+
+---
+
+*Made with C++, Q\*bert, and a passion for classic arcade games 🎮 — Adam*
