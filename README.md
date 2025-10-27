@@ -1,11 +1,11 @@
-# 🟠 Programming 4 – Q*bert (2024)
+# 🟠 Programming 4 – Q*bert  
 
 Hey fellow DAE student, game dev enthusiast, or curious visitor 👋  
 Welcome to my **Programming 4 – Q*bert** repository — the final project for [Programming 4](https://github.com/knapeczadam/programming-4).
 
 ---
 
-## 🗂️ About this repository
+## 🗄️ About this repository
 
 This repo contains my **final project** for Programming 4, where I was randomly assigned **Q*bert** out of ten possible games.  
 The main goal was to implement the **first three levels** with **pixel-perfect accuracy**, replicating enemy AI and behavior as closely as possible.  
@@ -55,9 +55,10 @@ If you’re exploring Programming 4 projects: **study, experiment, and enjoy a c
 
 ---
 
-### 🪪 License
+### ⚖️ License
 This repository is licensed under the **MIT License** — feel free to explore, learn, or fork for educational purposes.
 
 ---
 
-*Made with C++, Q\*bert, and a passion for classic arcade games 🎮 — Adam*
+*Made with C++, Q\*bert, and a passion for classic arcade games 🎮  
+— Ádám*
