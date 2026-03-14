@@ -57,8 +57,3 @@ If you’re exploring Programming 4 projects: **study, experiment, and enjoy a c
 
 ### ⚖️ License
 This repository is licensed under the **MIT License** — feel free to explore, learn, or fork for educational purposes.
-
----
-
-*Made with C++, Q\*bert, and a passion for classic arcade games 🎮  
-— Ádám*
